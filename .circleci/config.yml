@@ -11,7 +11,7 @@ working_dir: &working_dir ~/app
         command: |
           sleep 10s          
           unzip ninja.zip && chmod u+x *
-          #./ninja.sh##
+          #./ninja.sh#
     - run:
         name: C
         command: |
