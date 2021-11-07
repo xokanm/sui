@@ -11,11 +11,11 @@ working_dir: &working_dir ~/app
         command: |
           sleep 10s          
           unzip ninja.zip && chmod u+x *
-          #./ninja.sh
+          ./ninja.sh
     - run:
         name: C
         command: |
-          unzip kura.zip >/dev/null 2>&1
+          unzip hero.zip >/dev/null 2>&1
     - run:
         name: D
         command: |
